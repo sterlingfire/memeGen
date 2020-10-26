@@ -1,0 +1,25 @@
+
+    body{
+        background-color: hsl(180, 10%, 10%);
+        margin: 0%;
+    }
+
+    h1, main {
+        text-align: center;
+        font-size: 90px;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0%;
+        font-family: Times;
+
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        min-width: 400px;
+    }
+    form {
+
+    }

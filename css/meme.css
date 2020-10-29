@@ -3,46 +3,74 @@ body{
     background-color: hsl(180, 10%, 10%);
     margin: 0%;
 }
-
-
 h1{
-    font-size: 70px;
-    color: darkcyan;
-    justify-content: center;
     margin: 0%;
+    padding: 0%;
     width: 100%;
     height: 25%;
+    font-size: 70px;
+    color: darkcyan;
     text-transform: uppercase;
     font-family: "Open Sans", sans-serif;
- }
+}
 main {
     padding: 5%;
     display: flex;
-    justify-content: center;
-    background: hsl(180, 10%, 10%);
+    margin: 0 auto;
     min-width: 400px;
     max-width: 800px;
+    background: hsl(180, 10%, 10%);
 }
 .upload{
     padding: 0%;
     width: 100%;
     height: 100%;
-    justify-content: center;
     min-width: 400px;
     max-width: 800px;
 }
+.topText, .bottomText{
+    z-index: 8;
+    text-align: center;
+    font-size: 50px;
+    padding: 1% 5% 0%;
+    position: relative;
+    color: whitesmoke;
+    text-shadow: turquoise;
+    text-transform: uppercase;
+    text-shadow: #000 0px 0px 6px;
+    font-family: Impact, sans-serif;
+}
+/* .topText{
+    left: 50px;
+}
+.bottomText{
+
+    left: 50px;
+} */
 .meme {
+    width: 100%;
+    height: 100%;
+    /* min-width: 400px;
+    max-width: 800px;
+    max-height: 800px; */
+    position: relative;
+    border: #08fdd883;
+    border-style: ridge;
+    border-radius: 25px;
+    background: hsl(180, 10%, 10%);
+}
+.boundary{
     padding: 5%;
     width: 100%;
     height: 100%;
-    justify-content: center;
+    border: #08fdd883;
+    overflow: hidden;
     min-width: 400px;
     max-width: 800px;
-    max-height: 800px;
-    border: #08fdd8;
-    border-style: ridge;
     border-radius: 25px;
-    overflow: hidden;
+    text-overflow: ellipsis;
+    background: hsl(200, 40%, 20%);
+    /* border-style: ridge; */
 }
 form{
     min-width: 300px;
@@ -87,21 +115,21 @@ input:active{
 
 }
 .flat-button {
+    margin: 0px;
     width: auto;
+    float: right;
+    font-size: 15px;
+    list-style: none;
     color: #08fdd8;
-    font-size: 11px;
-    letter-spacing: 3px;
-    font-family: "Open Sans", sans-serif;
-    text-decoration: none;
     padding: 8px 10px;
-    border: 2px solid #08fdd8;
+    text-align: center;
     border-radius: 4px;
+    letter-spacing: 4px;
+    text-decoration: none;
     background: transparent;
     text-transform: uppercase;
-    float: right;
-    text-align: center;
-    margin: 0px;
-    list-style: none;
+    border: 2px solid #08fdd8;
+    font-family: "Open Sans", sans-serif;
   }
   .flat-button:hover{
     background: steelblue;

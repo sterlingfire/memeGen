@@ -50,6 +50,7 @@ main {
 .meme {
     width: 100%;
     height: 100%;
+    margin-top: 75px;
     /* min-width: 400px;
     max-width: 800px;
     max-height: 800px; */
@@ -133,5 +134,15 @@ input:active{
   }
   .flat-button:hover{
     background: steelblue;
-
+  }
+  .x-button {
+    margin: 0px;
+    padding: 10px;
+    font-size: 12px;
+    color: #08fdd8;
+    text-align: center;
+    border-radius: 50%;
+    background: transparent;
+    border: 2px solid #08fdd8;
+    font-family: "Open Sans", sans-serif;
   }

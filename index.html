@@ -10,22 +10,23 @@
 <body>
     <main>
         <div class="boundary">
-        <h1>Just meme it!</h1>
-
-        <form action="#" id="options">
-            <label for="image">Image URL:</label>
-            <input autofocus type="text" name="image" id="imageURL" placeholder="https://example.com/image.jpg">
-            <label for="topText">Top Text:</label>
-            <input type="text" name="topText" id="topTextbox" placeholder="Top text!">
-            <div class="meme">
-                <div class="topText">Top Text!</div>
-                <img class="upload" id="upload" src="img/morpheus-meme.jpg" alt="What if you could make memes?">
-                <div class="bottomText">Bottom Text!</div>
+            <h1>Just meme it!</h1>
+            <form action="submit" id="options">
+                <label for="image">Image URL:</label>
+                <input autofocus type="text" name="image" id="imageURL" placeholder="https://example.com/image.jpg">
+                <label for="topText">Top Text:</label>
+                <input type="text" name="topText" id="topTextbox" placeholder="Top text!">
+                <label for="topText">Bottom Text:</label>
+                <input type="text" name="bottomText" id="bottomTextbox" placeholder="Bottom text!">
+                <button name="add" class="flat-button">Add Text</button>
+            </form>
+            <div class="memes">
+                <div class="meme">
+                    <div class="topText">Top Text!</div>
+                    <img class="upload" id="upload" src="img/morpheus-meme.jpg" alt="What if you could make memes?">
+                    <div class="bottomText">Bottom Text!</div>
+                </div>
             </div>
-            <label for="topText">Bottom Text:</label>
-            <input type="text" name="bottomText" id="bottomTextbox" placeholder="Bottom text!">
-            <button name="add" class="flat-button">Add Text</button>
-        </form>
         </div>
     </main>
     <script src="src/meme.js"></script>

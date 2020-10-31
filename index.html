@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meme It!</title>
     <link rel="stylesheet" href="css/meme.css">
-
 </head>
 <body>
     <main>
@@ -14,17 +13,41 @@
             <form action="submit" id="options">
                 <label for="image">Image URL:</label>
                 <input autofocus type="text" name="image" id="imageURL" placeholder="https://example.com/image.jpg">
+                <!-- Input text -->
                 <label for="topText">Top Text:</label>
                 <input type="text" name="topText" id="topTextbox" placeholder="Top text!">
-                <label for="topText">Bottom Text:</label>
+
+                <label for="midText">Middle Text:</label>
+                <input type="text" name="midText" id="midTextbox" placeholder="Middle text">
+
+                <label for="bottomText">Bottom Text:</label>
                 <input type="text" name="bottomText" id="bottomTextbox" placeholder="Bottom text!">
                 <button name="add" class="flat-button">Add Text</button>
+                <!-- <button name="+" onclick="addText()" class="flat-button">+</button> -->
             </form>
+            <div class="options">
+                <label for="fonts">font:</label>
+                <select name="fonts" id="fonts">
+                    <option value="western">Western</option>
+                    <option value="Impact">Impact</option>
+                    <option value="Times, Times New Roman, serif">Times</option>
+                    <option value="Helvetica, sans-serif">Helvetica</option>
+                    <option value="fangsong">Fangsong</option>
+                    <option value="serif">Serif</option>
+                    <option value="sans-serif">Sans-serif</option>
+                    <option value="monospace">Monospace</option>
+                    <option value="cursive">Cursive</option>
+                </select>
+                <!-- <label for="color">Font Color</label>
+                <input type="color" class="color" value="#FFFFFF"> -->
+                <!-- <label for="bold">Bold:</label><input type="checkbox" id="bold" name="bold" value="Bold" >
+                <label for="Italics">Italics:</label><input type="checkbox" id="italics" name="italics" value="Italics" > -->
+            </div>
             <div class="memes">
                 <div class="meme">
-                    <div class="topText">Top Text!</div>
-                    <img class="upload" id="upload" src="img/morpheus-meme.jpg" alt="What if you could make memes?">
-                    <div class="bottomText">Bottom Text!</div>
+                    <div class="topText">What if I told you</div>
+                    <img class="upload" id="upload" src="img/morpheus.png" alt="What if you could make memes?">
+                    <div class="bottomText">You can make your own memes?</div>
                 </div>
             </div>
         </div>
